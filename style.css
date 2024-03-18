@@ -1,6 +1,11 @@
 /* Navigation Bar */
 .navbar {
     height: 102px;
+    backdrop-filter: blur(70px);
+}
+
+.navbar.fixed-top {
+    z-index: 1000;
 }
 
 .menu {
@@ -98,3 +103,123 @@
     width: 100%;
 }
 /* Section Enam End */
+
+/* Section Footer */
+
+#footer {
+    margin-top: 120px;
+}
+
+.footer-img img{
+    height: 29px;
+    margin-bottom: 52px;
+}
+
+.address {
+    margin-left: -30px;
+}
+
+.address img {
+    margin-bottom: 24px;
+}
+
+.address ul{
+    list-style: none;
+}
+
+.address .title {
+    color: #10172F;
+    font-size: 16px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 300;
+}
+
+.address .copyright {
+    color: #848AA5;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.navigation ul{
+    list-style: none;
+}
+
+
+#navigation {
+    font-size: 24px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 500;
+    color: #10172F;
+    margin-bottom: 32px;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #374E9D;
+    font-size: 16px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 400;
+}
+
+.product ul {
+    list-style: none;    
+}
+
+#product {
+    font-size: 24px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 500;
+    color: #10172F;
+    margin-bottom: 32px;
+}
+
+.product ul li a {
+    text-decoration: none;
+    color: #374E9D;
+    font-size: 16px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 400;
+}
+
+.medsos ul {
+    list-style: none;    
+}
+
+#medsos {
+    font-size: 24px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 500;
+    color: #10172F;
+    margin-bottom: 32px;
+}
+
+.medsos ul li a {
+    text-decoration: none;
+    color: #374E9D;
+    font-size: 16px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 400;
+}
+
+.support ul {
+    list-style: none;    
+}
+
+#support {
+    font-size: 24px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 500;
+    color: #10172F;
+    margin-bottom: 32px;
+}
+
+.support ul li a {
+    text-decoration: none;
+    color: #374E9D;
+    font-size: 16px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 400;
+}
+
+/* Section Footer End */
