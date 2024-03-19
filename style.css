@@ -38,6 +38,16 @@
 
 /* Navigation Bar End */
 
+/* Section One */
+.section-one .title {
+    color: #161F3F;
+    font-size: 72px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 500;
+}
+/* Section One End */
+
+
 /* Section Three */
 .section-tiga {
     background-color: #161F3F;
@@ -99,6 +109,62 @@
     margin-bottom: 92px;
 }
 /* Section Three End */
+
+/* Section Four */
+.section-empat .title {
+    color: #848AA5;
+    font-size: 24px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 300;
+}
+
+.section-empat .sub-title {
+    color: #161F3F;
+    font-size: 48px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 700;
+}
+
+.section-empat .card {
+    border: none;
+}
+
+
+
+.card-body .title {
+    color: #10172F;
+    font-size: 24px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 700;
+}
+
+.card-body .sub-title {
+    color: #848AA5;
+    font-size: 16px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 300;
+}
+
+.btn-section-empat {
+    width: 179px;
+    height: 48px;
+    border: 1px solid #555A71;
+    border-radius: 120px;
+    color: #555A71;
+    font-size: 16px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 500;
+    margin-top: 72px;
+    margin-bottom: ;
+}
+
+.title-has {
+    color: #848AA5;
+    font-size: 24px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 300;
+}
+/* Section Four End */
 
 /* Section Enam */
 .section-enam {
