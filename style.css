@@ -38,6 +38,68 @@
 
 /* Navigation Bar End */
 
+/* Section Three */
+.section-tiga {
+    background-color: #161F3F;
+    /* height: 1338px; */
+    margin-bottom: 132px;
+}       
+
+.our-service-one .title {
+    color: #848AA5;
+    font-size: 24px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 500;
+    margin-top: 120px;
+}
+
+.our-service-one .sub-title {
+    color: #FFF;
+    font-size: 48px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 600;
+    margin-top: 120px;
+}
+
+.our-service-two ul {
+    margin-top: 132px;
+    list-style: none;
+}
+
+.our-service-two .title {
+    color: #FFF;
+    font-size: 24px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 700;
+    margin-top: 36px;
+}
+
+.our-service-two .sub-title {
+    color: #848AA5;
+    font-size: 16px;
+    font-family: Pathway Extreme, sans-serif;
+}
+
+.our-service-three ul{
+    margin-top: 120px;
+}
+
+.our-service-three .title {
+    color: #FFF;
+    font-size: 24px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 700;
+    margin-top: 36px;
+}
+
+.our-service-three .sub-title {
+    color: #848AA5;
+    font-size: 16px;
+    font-family: Pathway Extreme, sans-serif;
+    margin-bottom: 92px;
+}
+/* Section Three End */
+
 /* Section Enam */
 .section-enam {
     background-image: url('assets/image/bg-section6.svg');
@@ -105,7 +167,6 @@
 /* Section Enam End */
 
 /* Section Footer */
-
 #footer {
     margin-top: 120px;
 }
@@ -222,4 +283,8 @@
     font-weight: 400;
 }
 
+
+.bg-footer {
+    float: right;
+}
 /* Section Footer End */
