@@ -108,6 +108,11 @@
     font-family: Pathway Extreme, sans-serif;
     margin-bottom: 92px;
 }
+
+.section-tiga .side-left {
+    position: absolute;
+    margin-top: -550px;
+}
 /* Section Three End */
 
 /* Section Four */
@@ -155,7 +160,6 @@
     font-family: Pathway Extreme, sans-serif;
     font-weight: 500;
     margin-top: 72px;
-    margin-bottom: ;
 }
 
 .title-has {
