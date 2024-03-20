@@ -132,9 +132,18 @@
 
 .section-empat .card {
     border: none;
+    position: relative;
+    overflow: hidden;
 }
 
+.section-empat .card img {
+    transition: transform 0.3s ease;
+}
 
+.section-empat .card img:hover {
+    transform: scale(1.1);
+
+}
 
 .card-body .title {
     color: #10172F;
@@ -154,12 +163,16 @@
     width: 179px;
     height: 48px;
     border: 1px solid #555A71;
-    border-radius: 120px;
+    border-radius: 120px;        
+    margin-top: 72px;
+}
+
+.btn-section-empat a {
+    text-decoration: none;
     color: #555A71;
     font-size: 16px;
     font-family: Pathway Extreme, sans-serif;
     font-weight: 500;
-    margin-top: 72px;
 }
 
 .title-has {
@@ -167,6 +180,55 @@
     font-size: 24px;
     font-family: Pathway Extreme, sans-serif;
     font-weight: 300;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;    
+}
+
+.logos::before ,.logos::after {
+    position: absolute;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #FFF);
+}
+
+.logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #FFF);
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+    height: 50px;
+    margin: 0 40px;
 }
 /* Section Four End */
 
@@ -214,16 +276,42 @@
 
 .section-enam button {
     border: none;
-    border-radius: 120px;
-    color: #555A71;
+    border-radius: 120px;    
     width: 181px;
-    height: 48px;
+    height: 48px;    
+    margin-top: 72px;  
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.section-enam button a {
+    color: #555A71;
     font-size: 16px;
     font-family: Pathway Extreme, sans-serif;
     font-weight: 500;
-    margin-top: 72px;
-    
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
 }
+
+.section-enam button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    
+    width: 100%;
+    height: 100%;
+    background-color: #FCCC00;
+    transition: left 0.3s ease;
+    z-index: 0;    
+}
+
+.section-enam button:hover::before {    
+    left: 0;
+}
+
 
 .img-enam {
     display: flex;
@@ -265,11 +353,18 @@
     font-weight: 300;
 }
 
+.address .title:hover {
+    color: #afafaf;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+
 .address .copyright {
     color: #848AA5;
     font-family: Pathway Extreme, sans-serif;
     font-weight: 300;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .navigation ul{
@@ -293,6 +388,15 @@
     font-weight: 400;
 }
 
+.navigation ul li a:hover {    
+    color: #6072ae;
+    text-decoration: underline 2px;    
+}
+
+#navigation:hover {
+    text-decoration: none;
+}
+
 .product ul {
     list-style: none;    
 }
@@ -311,6 +415,15 @@
     font-size: 16px;
     font-family: Pathway Extreme, sans-serif;
     font-weight: 400;
+}
+
+.product ul li a:hover {
+    color: #6072ae;
+    text-decoration: underline 2px;      
+}
+
+#product:hover {
+    text-decoration: none;
 }
 
 .medsos ul {
@@ -333,6 +446,15 @@
     font-weight: 400;
 }
 
+.medsos ul li a:hover {
+    color: #6072ae;
+    text-decoration: underline 2px; 
+}
+
+#medsos:hover {
+    text-decoration: none;
+}
+
 .support ul {
     list-style: none;    
 }
@@ -351,6 +473,15 @@
     font-size: 16px;
     font-family: Pathway Extreme, sans-serif;
     font-weight: 400;
+}
+
+.support ul li a:hover {
+    color: #6072ae;
+    text-decoration: underline 2px; 
+}
+
+#support:hover {
+    text-decoration: none;
 }
 
 

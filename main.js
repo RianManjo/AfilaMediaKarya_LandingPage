@@ -147,23 +147,9 @@ function paragraphFive() {
         setTimeout(wordTen, 10);
     }
 }
-
-// function wordTen() {
-//     const typedTextElementTen = document.getElementById("typed-text10");
-//     const textArrayTen = [" "];
-//     let textTen = 0;
-//     let Ten = 0;
-
-//     function ketiktextTen() {
-//         if (Ten < textArrayTen[textTen].length) {
-//             typedTextElementTen.textContent += textArrayTen[textTen].charAt(Ten);
-//             Ten++;
-//             setTimeout(ketiktextTen, 10);
-//         }
-//     }
-//     ketiktextTen();
-// }
 paragraphFive();
 
 
 
+var copy = document.querySelector(".logos-slide").cloneNode(true);
+document.querySelector(".logos").appendChild(copy);
