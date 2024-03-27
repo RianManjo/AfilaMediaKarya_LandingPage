@@ -1,3 +1,5 @@
+const { Carousel } = require("bootstrap");
+
 // Paragraf One
 const typedTextElementOne = document.getElementById('typed-text1');
 const textArrayOne = ["Afila Media Karya"]; 

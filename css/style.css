@@ -232,9 +232,96 @@
 }
 /* Section Four End */
 
+/* Section Lima */
+.section-lima {
+    background-color: #161F3F;
+    height: 851px;
+    margin-bottom: 106px;
+}
+
+.section-lima .container .title {
+    color: #848AA5;
+    font-size: 24px;
+    font-family: Pathway, Extreme, sans-serif;
+    margin-top: 132px;
+}
+
+.section-lima .container .sub-title {
+    color: #FFF;
+    font-size: 52px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 600;
+    margin-top: 125px;
+}
+
+.owl-carousel .card {
+    width: 324px;
+    height: 404px;
+    border-radius: 20px;    
+
+}
+
+.owl-carousel .card .img-testimoni {    
+    width: 72px;
+    margin-top: 30px;
+    margin-left: 20px;        
+}
+
+.owl-carousel .card .bg-testimoni {
+    width: 155px;
+}
+
+.owl-carousel .card .name {
+    color: #10172F;
+    font-size: 24px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 500;
+    padding-left: 20px;
+    position: absolute;
+    padding-top: 120px;
+}
+
+.owl-carousel .btn {
+    position: absolute;
+    padding-top: 165px;
+    margin-left: -75px;
+}
+
+.owl-carousel .btn button {
+    border: none;
+    border-radius: 40px;
+    width: 137px;
+    height: 28px;
+    background-color: #F8D27D;
+    font-size: 12px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 400;
+}
+
+.owl-carousel .desk {
+    text-align: center;
+    text-transform: capitalize;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 75px;
+    font-size: 16px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 200;
+    color: #848AA5;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+}
+
+.bg-section-lima {
+    position: absolute;
+    margin-top: -500px;
+}
+
+/* Section Lima End */
+
 /* Section Enam */
 .section-enam {
-    background-image: url('assets/image/bg-section6.svg');
+    background-image: url("/assets/image/bg-section6.svg");
     background-size: contain;
     background-repeat: no-repeat;
     height: 536px;
