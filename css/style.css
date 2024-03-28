@@ -314,7 +314,7 @@
 
 .bg-section-lima {
     position: absolute;
-    margin-top: -500px;
+    margin-top: -590px;
 }
 
 /* Section Lima End */
@@ -576,3 +576,109 @@
     float: right;
 }
 /* Section Footer End */
+
+
+.navbar-mobile {
+    display: none;
+}
+
+/* Responsive Mobile */
+
+@media (max-width: 767px) {
+    /* Navigation Bar */
+    .navbar-desktop {
+        display: none;
+    }
+
+    .navbar-mobile {
+        display: block;
+    }
+    
+    /* Navigation Bar Selesai */
+
+    /* Section One */
+    .section-one .title {
+        color: #161F3F;
+        font-size: 30px;
+        font-family: Pathway Extreme, sans-serif;
+        font-weight: 700;
+    }
+    /* Section One End */
+
+    /* Section Three */
+    .our-service-one .title {
+        text-align: center;
+        font-size: 20px;
+        font-family: 500;
+        margin-top: 92px;
+    }
+    
+    .our-service-one .sub-title {
+        text-align: center;
+        font-size: 32px;                
+        margin-top: 48px;
+    }
+
+    .our-service-two .col-md-3 {
+        display: none;
+    }
+
+    .our-service-two li  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -50px;
+    }
+
+    .our-service-two li img {
+        width: 186px;
+    }
+
+    .our-service-two .title {
+        text-align: center;        
+        font-size: 20px;
+    }
+
+    .our-service-two .sub-title {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .our-service-three li  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -50px;
+    }  
+
+    .our-service-three li img {
+        width: 186px;
+    }  
+
+    .our-service-three .title {
+        text-align: center;        
+        font-size: 20px;
+    }
+
+    .our-service-three .sub-title {
+        text-align: center;
+        font-size: 14px;
+    }        
+    /* Section Three End */
+
+    /* Section Four */
+    .section-empat .title {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .section-empat .sub-title {
+        font-size: 32px;
+        text-align: center;
+    }
+    /* Section Four End */
+}
+
+
+
+/* Responsive Mobile End */
