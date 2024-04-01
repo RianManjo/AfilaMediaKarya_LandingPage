@@ -681,10 +681,38 @@
         font-size: 20px;
     }
     
+
     .section-empat .card .sub-title {
-        font-size: 16px;
+        font-size: 20px;        
     }
+
+    .section-empat .title-has {
+        font-size: 20px;
+        margin-top: 92px;        
+    }        
+    
+    .logos .logos-slide img {
+        width: 110px;
+    }    
     /* Section Four End */
+
+    /* Section Five */
+    .section-lima .title {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .section-lima .sub-title {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    #slider {
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+    }    
+    /* Section Five End */
 }
 
 

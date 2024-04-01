@@ -212,13 +212,13 @@
                     <div class="row">
                         <div class="col-3"></div>
                         <div class="col-9">
-                            <button class="btn-section-empat"><a href="#">View Other</a></button>
+                            <button class="btn-section-empat"><a href="#">View Others</a></button>
                         </div>
                     </div>
                 </div>
                 <hr>                
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-md-12">
                         <p class="title-has text-center">Has Been Trusted By Various Large Agencies </p>
                     </div>
                 </div>                
@@ -252,16 +252,16 @@
     <div class="section-lima">
         <div class="container">
             <div class="row">
-                <div class="col-3">
+                <div class="col-md-3">
                     <p class="title">TESTIMONIALS</p>
                 </div>
-                <div class="col-9">
+                <div class="col-md-9">
                     <p class="sub-title">Their Statement About Us</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-3"></div>
-                <div class="col-9">
+            <div class="row" id="slider">
+                <div class="col-md-3"></div>
+                <div class="col-md-9">
                     <div class="owl-carousel owl-theme mt-5">                                            
                         <div class="card">
                             <div class="row mt-2">
@@ -379,94 +379,9 @@
                                     <div class="btn">
                                         <button>CEO Of Mapia Cloth</button>
                                     </div>
-                                    <div class="desk">"very pleased to work with dis digital agency! they not only provide creative and responsive design for our website but also help boost our online visibilty"</div>
-                                </div>                            
-                            </div>
-                            <div class="card">
-                                <div class="row mt-2">
-                                    <div class="col">
-                                        <div class="container">
-                                            <img src="assets/image/img-testimonial.svg" alt="" class="img-testimoni">
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <img src="assets/image/img-bg-testimonial.svg" alt="" class="bg-testimoni">
-                                    </div>
-                                    <p class="name">Andis Rahim</p>
-                                    <div class="btn">
-                                        <button>CEO Of Mapia Cloth</button>
-                                    </div>
-                                    <div class="desk">"very pleased to work with dis digital agency! they not only provide creative and responsive design for our website but also help boost our online visibilty"</div>
-                                </div>                            
-                            </div>
-                            <div class="card">
-                                <div class="row mt-2">
-                                    <div class="col">
-                                        <div class="container">
-                                            <img src="assets/image/img-testimonial.svg" alt="" class="img-testimoni">
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <img src="assets/image/img-bg-testimonial.svg" alt="" class="bg-testimoni">
-                                    </div>
-                                    <p class="name">Andis Rahim</p>
-                                    <div class="btn">
-                                        <button>CEO Of Mapia Cloth</button>
-                                    </div>
-                                    <div class="desk">"very pleased to work with dis digital agency! they not only provide creative and responsive design for our website but also help boost our online visibilty"</div>
-                                </div>                            
-                            </div>
-                            <div class="card">
-                                <div class="row mt-2">
-                                    <div class="col">
-                                        <div class="container">
-                                            <img src="assets/image/img-testimonial.svg" alt="" class="img-testimoni">
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <img src="assets/image/img-bg-testimonial.svg" alt="" class="bg-testimoni">
-                                    </div>
-                                    <p class="name">Andis Rahim</p>
-                                    <div class="btn">
-                                        <button>CEO Of Mapia Cloth</button>
-                                    </div>
-                                    <div class="desk">"very pleased to work with dis digital agency! they not only provide creative and responsive design for our website but also help boost our online visibilty"</div>
-                                </div>                            
-                            </div>
-                            <div class="card">
-                                <div class="row mt-2">
-                                    <div class="col">
-                                        <div class="container">
-                                            <img src="assets/image/img-testimonial.svg" alt="" class="img-testimoni">
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <img src="assets/image/img-bg-testimonial.svg" alt="" class="bg-testimoni">
-                                    </div>
-                                    <p class="name">Andis Rahim</p>
-                                    <div class="btn">
-                                        <button>CEO Of Mapia Cloth</button>
-                                    </div>
-                                    <div class="desk">"very pleased to work with dis digital agency! they not only provide creative and responsive design for our website but also help boost our online visibilty"</div>
-                                </div>                            
-                            </div>
-                            <div class="card">
-                                <div class="row mt-2">
-                                    <div class="col">
-                                        <div class="container">
-                                            <img src="assets/image/img-testimonial.svg" alt="" class="img-testimoni">
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <img src="assets/image/img-bg-testimonial.svg" alt="" class="bg-testimoni">
-                                    </div>
-                                    <p class="name">Andis Rahim</p>
-                                    <div class="btn">
-                                        <button>CEO Of Mapia Cloth</button>
-                                    </div>
-                                    <div class="desk">"very pleased to work with dis digital agency! they not only provide creative and responsive design for our website but also help boost our online visibilty"</div>
-                                </div>                            
-                            </div>
+                                <div class="desk">"very pleased to work with dis digital agency! they not only provide creative and responsive design for our website but also help boost our online visibilty"</div>
+                            </div>                            
+                        </div>                                                        
                     </div>                    
                 </div>
             </div>
@@ -583,8 +498,18 @@
     <script>
     $(document).ready(function() {
         $('.owl-carousel').owlCarousel({
-            margin: 100,            
+            margin: 100,
+            responsive: {
+                0: {
+                    items: 1
+                }, 
+                600: {
+                    items:3
+                },
+            }        
         });
+
+        
 
         // Memanggil tombol "Next"
         $('.owl-next').click(function() {
