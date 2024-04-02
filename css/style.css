@@ -582,6 +582,10 @@
     display: none;
 }
 
+.section-enam-mobile .row {
+    display: none;
+}
+
 /* Responsive Mobile */
 
 @media (max-width: 767px) {
@@ -697,6 +701,13 @@
     /* Section Four End */
 
     /* Section Five */
+
+    .section-lima {
+        background-color: #161F3F;
+        height:1080px;
+        margin-bottom: 106px;
+    }
+
     .section-lima .title {
         text-align: center;
         font-size: 20px;
@@ -707,12 +718,96 @@
         font-size: 32px;
     }
 
-    #slider {
-        display: flex;
-        justify-content: center;
-        align-items: center;        
-    }    
+    .section-lima .bg-section-lima img{
+        width: 520px;
+        margin-top: 210px;        
+        position: absolute;
+        margin-left: -270px;
+    }        
     /* Section Five End */
+
+    /* Section Six */
+    .section-enam {
+        display: none;
+    }
+
+    .section-enam-mobile .row {
+        display: block;
+    }
+    
+    .section-enam-mobile {    
+            background-image: url("/assets/image/bg-mobile-section6.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            /* width: 100%; */
+            height: 838px;
+            display: flex;                    
+    }
+    
+    .section-enam-mobile .title {
+        color: #848AA5;
+        font-size: 20px;
+        font-family: Pathway Extreme, sans-serif;
+        font-weight: 400;
+        margin-top: 104px;
+    }
+
+    .section-enam-mobile .sub-title {
+        color: #FFF;
+        font-size: 32px;
+        font-family: Pathway Extreme, sans-serif;
+        font-weight: 600;
+        margin-top: 32px;
+    }
+    
+    .section-enam-mobile .ket {
+        color: #FFF;
+        font-size: 16px;
+        font-family: Pathway Extreme, sans-serif;
+        font-weight: 400;
+        padding-top: -10px;                
+    }
+
+    .section-enam-mobile button {
+        border: none;
+        border-radius: 120px;    
+        width: 181px;
+        height: 48px;    
+        margin-top: 72px;  
+        position: relative;
+        overflow: hidden;
+        
+    }
+    
+    .section-enam-mobile button a {
+        color: #555A71;
+        font-size: 16px;
+        font-family: Pathway Extreme, sans-serif;
+        font-weight: 500;
+        text-decoration: none;
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        padding-top: 11px;
+    }
+    
+    .section-enam-mobile button::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        
+        width: 100%;
+        height: 100%;
+        background-color: #FCCC00;
+        transition: left 0.3s ease;
+        z-index: 0;    
+    }
+    
+    .section-enam-mobile button:hover::before {    
+        left: 0;
+    }
+    /* Section Six End */
 }
 
 
