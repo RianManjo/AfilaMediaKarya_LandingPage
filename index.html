@@ -262,7 +262,7 @@
             <div class="row" id="slider">
                 <div class="col-md-3"></div>
                 <div class="col-md-9">
-                    <div class="owl-carousel owl-theme mt-5">                                            
+                    <div class="owl-carousel owl-theme mt-5">                                                                            
                         <div class="card">
                             <div class="row mt-2">
                                 <div class="col m-0">
@@ -279,7 +279,7 @@
                                 </div>
                                 <div class="desk">"very pleased to work with dis digital agency! they not only provide creative and responsive design for our website but also help boost our online visibilty"</div>
                             </div>                            
-                        </div>
+                        </div>                    
                         <div class="card">
                             <div class="row mt-2">
                                 <div class="col">
@@ -296,7 +296,7 @@
                                 </div>
                                 <div class="desk">"very pleased to work with dis digital agency! they not only provide creative and responsive design for our website but also help boost our online visibilty"</div>
                             </div>                            
-                        </div>
+                        </div>                        
                         <div class="card">
                             <div class="row mt-2">
                                 <div class="col">
@@ -313,7 +313,7 @@
                                 </div>
                                 <div class="desk">"very pleased to work with dis digital agency! they not only provide creative and responsive design for our website but also help boost our online visibilty"</div>
                             </div>                            
-                        </div>
+                        </div>                        
                         <div class="card">
                             <div class="row mt-2">
                                 <div class="col">
@@ -330,7 +330,7 @@
                                 </div>
                                 <div class="desk">"very pleased to work with dis digital agency! they not only provide creative and responsive design for our website but also help boost our online visibilty"</div>
                             </div>                            
-                        </div>
+                        </div>                        
                         <div class="card">
                             <div class="row mt-2">
                                 <div class="col">
@@ -347,40 +347,40 @@
                                 </div>
                                 <div class="desk">"very pleased to work with dis digital agency! they not only provide creative and responsive design for our website but also help boost our online visibilty"</div>
                             </div>                            
-                        </div>
-                            <div class="card">
-                                <div class="row mt-2">
-                                    <div class="col">
-                                        <div class="container">
-                                            <img src="assets/image/img-testimonial.svg" alt="" class="img-testimoni">
-                                        </div>
+                        </div>                        
+                        <div class="card">
+                            <div class="row mt-2">
+                                <div class="col">
+                                    <div class="container">
+                                        <img src="assets/image/img-testimonial.svg" alt="" class="img-testimoni">
                                     </div>
-                                    <div class="col">
-                                        <img src="assets/image/img-bg-testimonial.svg" alt="" class="bg-testimoni">
-                                    </div>
-                                    <p class="name">Andis Rahim</p>
-                                    <div class="btn">
-                                        <button>CEO Of Mapia Cloth</button>
-                                    </div>
-                                    <div class="desk">"very pleased to work with dis digital agency! they not only provide creative and responsive design for our website but also help boost our online visibilty"</div>
-                                </div>                            
-                            </div>
-                            <div class="card">
-                                <div class="row mt-2">
-                                    <div class="col">
-                                        <div class="container">
-                                            <img src="assets/image/img-testimonial.svg" alt="" class="img-testimoni">
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <img src="assets/image/img-bg-testimonial.svg" alt="" class="bg-testimoni">
-                                    </div>
-                                    <p class="name">Andis Rahim</p>
-                                    <div class="btn">
-                                        <button>CEO Of Mapia Cloth</button>
-                                    </div>
+                                </div>
+                                <div class="col">
+                                    <img src="assets/image/img-bg-testimonial.svg" alt="" class="bg-testimoni">
+                                </div>
+                                <p class="name">Andis Rahim</p>
+                                <div class="btn">
+                                    <button>CEO Of Mapia Cloth</button>
+                                </div>
                                 <div class="desk">"very pleased to work with dis digital agency! they not only provide creative and responsive design for our website but also help boost our online visibilty"</div>
                             </div>                            
+                        </div>                            
+                        <div class="card">
+                            <div class="row mt-2">
+                                <div class="col">
+                                    <div class="container">
+                                        <img src="assets/image/img-testimonial.svg" alt="" class="img-testimoni">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <img src="assets/image/img-bg-testimonial.svg" alt="" class="bg-testimoni">
+                                </div>
+                                <p class="name">Andis Rahim</p>
+                                <div class="btn">
+                                    <button>CEO Of Mapia Cloth</button>
+                                </div>
+                            <div class="desk">"very pleased to work with dis digital agency! they not only provide creative and responsive design for our website but also help boost our online visibilty"</div>
+                        </div>                            
                         </div>                                                        
                     </div>                    
                 </div>
@@ -502,28 +502,21 @@
     <script>
     $(document).ready(function() {
         $('.owl-carousel').owlCarousel({
-            margin: 100,
+            margin: 100,            
             responsive: {
                 0: {
-                    items: 1
+                    items: 1,
+                    loop: true,                    
                 }, 
                 600: {
-                    items:3
+                    items:3,
+                    loop: true,
+                    marge: true,
+                    nav: true,
+                    navText: ['<span><img src="assets/image/previous.svg" alt="">', '<span><img src="assets/image/next.svg" alt="">']
                 },
             },                                    
-        });
-
-        
-
-        // Memanggil tombol "Next"
-        $('.owl-next').click(function() {
-            $('.owl-carousel').trigger('next.owl.carousel');
-        });
-
-        // Memanggil tombol "Previous"
-        $('.owl-prev').click(function() {
-            $('.owl-carousel').trigger('prev.owl.carousel');
-        });
+        });            
     });
 
     </script>
