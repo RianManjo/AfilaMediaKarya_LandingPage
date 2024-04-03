@@ -39,6 +39,18 @@
 /* Navigation Bar End */
 
 /* Section One */
+
+.section-two {
+    margin-bottom: 295px;
+}
+
+.section-two .title {
+    color: #848AA5;
+    font-size: 24px;
+    font-family: PathwayExtreme, sans-serif;
+    font-weight: 400;
+}
+
 .section-one .title {
     color: #161F3F;
     font-size: 72px;
@@ -46,6 +58,21 @@
     font-weight: 500;
 }
 /* Section One End */
+
+/* Section Two */
+
+.our-medsos {
+    color: #848AA5;
+    font-size: 24px;
+    font-family: Pathway Extreme, sans-serif;
+}
+
+
+.bg-section-2 {
+    right: 0;
+    position: absolute;
+}
+/* Section Two End */
 
 
 /* Section Three */
@@ -167,12 +194,21 @@
     margin-top: 72px;
 }
 
-.btn-section-empat a {
+.btn-section-empat {
     text-decoration: none;
     color: #555A71;
     font-size: 16px;
     font-family: Pathway Extreme, sans-serif;
     font-weight: 500;
+}
+
+.btn-section-empat:hover {
+    background-color: #10172F;
+    color: #FFF;
+}
+
+.btn-section-empat a:hover {
+    color: #FFF;
 }
 
 .title-has {
