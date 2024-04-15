@@ -205,10 +205,7 @@
 .btn-section-empat:hover {
     background-color: #10172F;
     color: #FFF;
-}
-
-.btn-section-empat a:hover {
-    color: #FFF;
+    transition: .2s all ease-in-out;
 }
 
 .title-has {
