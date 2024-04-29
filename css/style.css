@@ -271,7 +271,9 @@ swiper-slide img {
     font-weight: 400;
 }
 
-
+.typing-effect-mobile {
+    display: none;
+}
 
 #btn-section-two {
     border: 2px solid #555A71;
@@ -774,6 +776,39 @@ swiper-slide img {
         font-weight: 700;
     }
     /* Section One End */
+
+    /* Section Two */
+    .section-two .title {
+        font-size: 20px;
+        font-weight: 200;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        } to {
+            width: 100%;
+        }
+    }
+
+    .typing-effect {
+        display: none;
+    }
+
+    .typing-effect-mobile {
+        font-size: 28px;
+        text-align: center;
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;        
+        animation: typing 1s steps(40, end);
+    }
+
+    .our-medsos {
+        font-size: 20px;
+        font-weight: 200;
+    }        
+    /* Section Two End */
 
     /* Section Three */
     .our-service-one .title {
