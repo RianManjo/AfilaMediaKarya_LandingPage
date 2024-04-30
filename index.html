@@ -12,9 +12,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Link Font  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    
 
     <!-- Link Owl Animate -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -23,30 +21,58 @@
     <title>Afila Media Karya</title>
 </head>
 <body>
-    <input type="checkbox" id="menu">
-    <!-- END MOBILE SCREEN -->
-    <header>        
-        <div class="logo">
-            <img src="assets/image/logo-afila.svg" alt="">            
-        </div>
-        <!-- MOBILE SCREEN -->
-        <div class="bg-menu">
-            <label for="menu">
-                <div></div>
-                <div></div>
-                <div></div>
-            </label>
-        </div>
+    <div class="navbar-desktop">
+        <nav class="navbar fixed-top">
+            <div class="container">
+                <div class="logo">
+                    <img src="assets/image/logo-afila.svg" alt="">
+                </div>
+                <div class="menus d-flex mt-3">
+                    <ul class="menu">
+                        <li class="list-menu"><a href="">HOME</a></li>
+                        <li class="list-menu"><a href="">ABOUT</a></li>
+                        <li class="list-menu"><a href="">SERVICE</a></li>
+                        <li class="list-menu"><a href="">PRODUCT</a></li>
+                        <li class="list-menu"><a href="">TESTIMONI</a></li>
+                        <li class="list-menu"><a href="">GALERY</a></li>
+                        <li class="list-menu"><a href="">NEWS</a></li>
+                        
+                    </ul>
+                </div>
+                <div>
+                    <button class="btn-contact">Contact Us <span><img src="assets/image/icon-whatsapp.svg" alt=""></span></button>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar Mobile -->
+    <div class="navbar-mobile">
+        <input type="checkbox" id="menu">
         <!-- END MOBILE SCREEN -->
-        <nav>
-            <a href="#Home" >HOME</a>
-            <a href="" >PRODUCT</a>
-            <a href="" >ABOUT</a>
-            <a href="#Service" >SERVICE</a>
-            <a href="#Portofolio" >PORTOFOLIO</a>
-            <button class="btn-contact">Contact Us <span><img src="assets/image/icon-whatsapp.svg" alt=""></span></button>
-        </nav>                    
-    </header>   
+        <header>        
+            <div class="logo">
+                <img src="assets/image/logo-afila.svg" alt="">            
+            </div>
+            <!-- MOBILE SCREEN -->
+            <div class="bg-menu">
+                <label for="menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </label>
+            </div>
+            <!-- END MOBILE SCREEN -->
+            <nav>
+                <a href="#Home" >HOME</a>
+                <a href="" >PRODUCT</a>
+                <a href="" >ABOUT</a>
+                <a href="#Service" >SERVICE</a>
+                <a href="#Portofolio" >PORTOFOLIO</a>
+                <button class="btn-contact">Contact Us <span><img src="assets/image/icon-whatsapp.svg" alt=""></span></button>
+            </nav>                    
+        </header>
+    </div>
+    <!-- Navbar Mobile -->
     
     <br>
     <br>
@@ -81,7 +107,16 @@
         </div>      
         <div class="sideright-section1">
             <img src="assets/image/sideright-section1.svg" alt="">
-        </div>                 
+        </div>    
+        
+        <!-- For Mobile -->
+        <div class="sideleft-section1-mobile">
+            <img src="assets/image/sideleft-section1-mobile.svg" alt="">
+        </div>
+        <div class="sideright-section1-mobile">
+            <img src="assets/image/sideright-section1-mobile.svg" alt="">
+        </div>
+        <!-- For Mobile End-->
     </section>
     <!-- Section One End -->
 
@@ -167,7 +202,7 @@
                         data-aos-duration="500">
                             <ul>
                                 <li>
-                                    <img src="assets/image/box-servers.svg" alt="">
+                                    <img src="assets/image/website-development.svg" alt="">
                                 </li>
                                 <li><p class="title">Website Development</p></li>
                                 <li><p class="sub-title">Every Business Need To Build Great <br>experience On Their Social Media. <br>However, For SME Mostly They're</p></li>
@@ -176,7 +211,7 @@
                         <div class="col-md-5 col-12" data-aos="fade-up" data-aos-offset="500"
                         data-aos-duration="700">
                             <ul>
-                                <li><img src="assets/image/box-servers.svg" alt=""></li>
+                                <li><img src="assets/image/mobile-development.svg" alt=""></li>
                                 <li><p class="title">Mobile Development</p></li>
                                 <li><p class="sub-title">Every Business Need To Build Great <br>experience On Their Social Media. <br>However, For SME Mostly They're</p></li>
                             </ul>
@@ -188,7 +223,7 @@
                         data-aos-offset="500"
                         data-aos-duration="900">
                             <ul>
-                                <li><img src="assets/image/box-servers.svg" alt=""></li>
+                                <li><img src="assets/image/it-consultant.svg" alt=""></li>
                                 <li><p class="title">IT Consulting</p></li>
                                 <li><p class="sub-title">Every Business Need To Build Great <br>experience On Their Social Media. <br>However, For SME Mostly They're</p></li>
                             </ul>
@@ -197,7 +232,7 @@
                         data-aos-offset="500"
                         data-aos-duration="1100">
                             <ul>
-                                <li><img src="assets/image/box-servers.svg" alt=""></li>
+                                <li><img src="assets/image/uiux-design.svg" alt=""></li>
                                 <li><p class="title">UI/UX Design</p></li>
                                 <li><p class="sub-title">Every Business Need To Build Great <br>experience On Their Social Media. <br>However, For SME Mostly They're</p></li>
                             </ul>
@@ -299,23 +334,22 @@
         </div>
         <div class="logos">
             <div class="logos-slide">
-                <img src="assets/image/Fictional company logo.svg" alt="">
-                <img src="assets/image/Fictional company logo (1).svg" alt="">
-                <img src="assets/image/Fictional company logo (2).svg" alt="">
-                <img src="assets/image/Fictional company logo (3).svg" alt="">
-                <img src="assets/image/Fictional company logo (4).svg" alt="">
-                <img src="assets/image/Fictional company logo (5).svg" alt="">        
-                <img src="assets/image/Fictional company logo (6).svg" alt="">        
+                <img src="assets/image/logo-enrekang.svg" alt="">
+                <img src="assets/image/logo-selayar.svg" alt="">
+                <img src="assets/image/logo-sidrap.svg" alt="">
+                <img src="assets/image/logo-luwu.svg" alt="">                      
             </div>
-
             <div class="logos-slide">
-                <img src="assets/image/Fictional company logo.svg" alt="">
-                <img src="assets/image/Fictional company logo (1).svg" alt="">
-                <img src="assets/image/Fictional company logo (2).svg" alt="">
-                <img src="assets/image/Fictional company logo (3).svg" alt="">
-                <img src="assets/image/Fictional company logo (4).svg" alt="">
-                <img src="assets/image/Fictional company logo (5).svg" alt="">        
-                <img src="assets/image/Fictional company logo (6).svg" alt="">              
+                <img src="assets/image/logo-enrekang.svg" alt="">
+                <img src="assets/image/logo-selayar.svg" alt="">
+                <img src="assets/image/logo-sidrap.svg" alt="">
+                <img src="assets/image/logo-luwu.svg" alt="">          
+            </div>
+            <div class="logos-slide">
+                <img src="assets/image/logo-enrekang.svg" alt="">
+                <img src="assets/image/logo-selayar.svg" alt="">
+                <img src="assets/image/logo-sidrap.svg" alt="">
+                <img src="assets/image/logo-luwu.svg" alt="">          
             </div>
         </div>
     </section>
@@ -458,10 +492,7 @@
                     </div>                    
                 </div>
             </div>
-        </div>
-        <div class="bg-section-lima">
-            <img src="assets/image/bg-section5.svg" alt="">
-        </div>        
+        </div>               
     </div>
     <!-- Section Five End -->
 
@@ -519,11 +550,20 @@
                 </div>                
                 <div class="menus-footer col-md-2">
                     <p class="title mt-2">Navigation</p>
-                    <p class="sub-title"><a href="#">Home</a></p>
-                    <p class="sub-title"><a href="#">Product</a></p>
-                    <p class="sub-title"><a href="#">Service</a></p>
-                    <p class="sub-title"><a href="#">Portofolio</a></p>
-                    <p class="sub-title"><a href="#">About</a></p>
+                    <div class="row">
+                        <div class="col-5">
+                            <p class="sub-title"><a href="#">Home</a></p>
+                            <p class="sub-title"><a href="#">About</a></p>
+                            <p class="sub-title"><a href="#">Service</a></p>
+                            <p class="sub-title"><a href="#">Product</a></p>                            
+                        </div>
+                        <div class="col-7">
+                            <p class="sub-title"><a href="#">Testimoni</a></p>
+                            <p class="sub-title"><a href="#">News</a></p>
+                            <p class="sub-title"><a href="#">Gallery</a></p>
+                            
+                        </div>
+                    </div>
                 </div>
                 <div class="menus-footer col-md-2">
                     <p class="title mt-2">Product</p>
@@ -637,8 +677,6 @@
         Object.assign(swiperEl, params)
         
         swiperEl.initialize();
-    </script>
-
-    
+    </script>    
 </body>
 </html>

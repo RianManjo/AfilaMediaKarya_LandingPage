@@ -1,4 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Lily+Script+One&family=Pathway+Extreme:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
 /* Navigation Bar */
+
+    /* Navbar Desktop */
+.logo {
+    display: flex;
+    /* gap: 15px;
+    margin-left: 80px; */
+}
+
+.btn-contact {
+    background-color: #FCCC00;
+    border: none;
+    border-radius: 50px;
+    width: 161px;
+    height: 48px;
+}
+
+.navbar {
+    height: 102px;
+    backdrop-filter: blur(70px);
+}
+
+.navbar.fixed-top {
+    z-index: 1000;
+}
+.menu {
+    display: flex;
+    gap: 20px;
+}
+.menu .list-menu {
+    list-style: none;
+}
+.menu .list-menu a {
+    color: #374E9D;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn-navbar {
+    background-color: #FCCC00;
+    border: none;
+    border-radius: 120px;
+    color: #000;
+    font-size: 16px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 500;
+    height: 48px;
+    width: 161px;
+}
+    /* Navbar Desktop End */
+
+    /* Navbar Mobile */
 header {
     display: flex;
     align-items: center;
@@ -11,20 +65,6 @@ header {
     z-index: 100;
     height: 102px;
     backdrop-filter: blur(70px);
-}
-
-.logo {
-    display: flex;
-    gap: 15px;
-    margin-left: 80px;
-}
-
-.btn-contact {
-    background-color: #FCCC00;
-    border: none;
-    border-radius: 50px;
-    width: 161px;
-    height: 48px;
 }
 
 nav {
@@ -58,9 +98,6 @@ nav a:target {
     border-bottom: 2px solid #384E9D;
 }
 
-nav button {
-    margin-right: 80px;
-}
 
 input {
     display: none;
@@ -144,43 +181,7 @@ input {
         opacity: 0;
     }
 }
-
-
-/* .navbar {
-    height: 102px;
-    backdrop-filter: blur(70px);
-}
-
-.navbar.fixed-top {
-    z-index: 1000;
-}
-
-.menu {
-    display: flex;
-    gap: 35px;
-}
-
-.menu .list-menu {
-    list-style: none;
-}
-
-.menu .list-menu a {
-    color: #374E9D;
-    font-family: Pathway Extreme, sans-serif;
-    font-weight: 500;
-    text-decoration: none;
-}
-.btn-navbar {
-    background-color: #FCCC00;
-    border: none;
-    border-radius: 120px;
-    color: #000;
-    font-size: 16px;
-    font-family: Pathway Extreme, sans-serif;
-    font-weight: 500;
-    height: 48px;
-    width: 161px;
-} */
+    /* Navbar Mobile End */
 
 
 /* Navigation Bar End */
@@ -201,7 +202,7 @@ swiper-container {
 swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    background: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -228,18 +229,9 @@ swiper-slide img {
     margin-top: -400px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+.sideleft-section1-mobile, .sideright-section1-mobile {
+    display: none;
+}
 
 /* Section One End */
 
@@ -321,13 +313,13 @@ swiper-slide img {
 
 /* Section Three */
 .section-tiga {
-    background-color: #161F3F;
+    background-color: #F6F8FF;
     /* height: 1338px; */
     margin-bottom: 132px;
 }       
 
 .our-service-one .title {
-    color: #848AA5;
+    color: #161F3F;
     font-size: 24px;
     font-family: Pathway Extreme, sans-serif;
     font-weight: 500;
@@ -335,7 +327,7 @@ swiper-slide img {
 }
 
 .our-service-one .sub-title {
-    color: #FFF;
+    color: #161F3F;
     font-size: 48px;
     font-family: Pathway Extreme, sans-serif;
     font-weight: 600;
@@ -347,15 +339,15 @@ swiper-slide img {
     list-style: none;
 }
 
-.our-service-two .title {
-    color: #FFF;
+.our-service-two .title, .our-service-three .title {
+    color: #161F3F;
     font-size: 24px;
     font-family: Pathway Extreme, sans-serif;
     font-weight: 700;
     margin-top: 36px;
 }
 
-.our-service-two .sub-title {
+.our-service-two .sub-title, .our-service-three .sub-title {
     color: #848AA5;
     font-size: 16px;
     font-family: Pathway Extreme, sans-serif;
@@ -363,22 +355,9 @@ swiper-slide img {
 
 .our-service-three ul{
     margin-top: 120px;
+    list-style: none;
 }
 
-.our-service-three .title {
-    color: #FFF;
-    font-size: 24px;
-    font-family: Pathway Extreme, sans-serif;
-    font-weight: 700;
-    margin-top: 36px;
-}
-
-.our-service-three .sub-title {
-    color: #848AA5;
-    font-size: 16px;
-    font-family: Pathway Extreme, sans-serif;
-    margin-bottom: 92px;
-}
 
 .section-tiga .side-left {
     position: absolute;
@@ -511,20 +490,20 @@ swiper-slide img {
 
 /* Section Lima */
 .section-lima {
-    background-color: #161F3F;
+    background-color: #F6F8FF;
     height: 851px;
     margin-bottom: 106px;
 }
 
 .section-lima .container .title {
-    color: #848AA5;
+    color: #161F3F;
     font-size: 24px;
     font-family: Pathway, Extreme, sans-serif;
     margin-top: 132px;
 }
 
 .section-lima .container .sub-title {
-    color: #FFF;
+    color: #161F3F;
     font-size: 52px;
     font-family: Pathway Extreme, sans-serif;
     font-weight: 600;
@@ -776,8 +755,7 @@ swiper-slide img {
 
     .navbar-mobile {
         display: block;
-    }
-    
+    }    
     /* Navigation Bar Selesai */
 
     /* Section One */
@@ -787,12 +765,36 @@ swiper-slide img {
         font-family: Pathway Extreme, sans-serif;
         font-weight: 700;
     }
+
+    swiper-container {
+        width: 80%;
+        height: 100%;
+    }
+
+    .sideleft-section1, .sideright-section1 {
+        display: none;
+    }
+
+    .sideleft-section1-mobile {
+        position: absolute;
+        margin-top: -250px;
+        display: block;
+    }
+    
+    .sideright-section1-mobile {
+        position: absolute;
+        margin-top: -50px;
+        float: right;
+        right: 0;
+        display: block;
+    }
     /* Section One End */
 
     /* Section Two */
     .section-two .title {
         font-size: 20px;
         font-weight: 200;
+        margin-top: 60px;
     }
 
     @keyframes typing {
