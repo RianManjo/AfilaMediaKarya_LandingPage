@@ -366,6 +366,11 @@ swiper-slide img {
 /* Section Three End */
 
 /* Section Four */
+
+.section-empat {
+    margin-bottom: 128px;
+}
+
 .section-empat .title {
     color: #848AA5;
     font-size: 24px;
@@ -392,7 +397,6 @@ swiper-slide img {
 
 .section-empat .card img:hover {
     transform: scale(1.1);
-
 }
 
 .card-body .title {
@@ -400,6 +404,7 @@ swiper-slide img {
     font-size: 24px;
     font-family: Pathway Extreme, sans-serif;
     font-weight: 700;
+    margin-left: -10px;
 }
 
 .card-body .sub-title {
@@ -407,29 +412,27 @@ swiper-slide img {
     font-size: 16px;
     font-family: Pathway Extreme, sans-serif;
     font-weight: 300;
+    margin-left: -10px;
 }
 
-.btn-section-empat {
+.section-empat .card-body a button {
     width: 179px;
     height: 48px;
-    border: 1px solid #555A71;
-    border-radius: 120px;        
-    margin-top: 72px;
-}
-
-.btn-section-empat {
-    text-decoration: none;
-    color: #555A71;
-    font-size: 16px;
+    color: #374E9D;
+    font-size: 18px;
     font-family: Pathway Extreme, sans-serif;
-    font-weight: 500;
+    border: 2px solid #374E9D;
+    border-radius: 120px;
+    margin-left: -10px;
+    background-color: #FFF;
 }
 
-.btn-section-empat:hover {
-    background-color: #10172F;
+.section-empat .card-body a button:hover {
     color: #FFF;
-    transition: .2s all ease-in-out;
+    background-color: #000;
 }
+
+
 
 .title-has {
     color: #848AA5;
@@ -575,18 +578,37 @@ swiper-slide img {
 
 /* Section Lima End */
 
+/* Section Gallery */
+.gallery .title {
+    color: #848AA5;
+    font-size: 24px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 300;
+}
+
+.gallery .sub-title {
+    color: #161F3F;
+    font-size: 48px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 700;
+}
+
+/* Section Gallery End */
+
 /* Section Enam */
+
+
 .section-enam {
     background-image: url("/assets/image/bg-section6.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    height: 536px;
+    height: 630px;
     width: auto;
 }
 
 .section-enam .content {
-    margin-top: 132px;
-    margin-left: 81px;        
+    margin-top: 200px;
+    margin-left: 47.57px;        
 }
 
 .section-enam .title {
@@ -599,16 +621,16 @@ swiper-slide img {
 }
 
 .section-enam .sub-title {
-    color: #FFF;
-    font-size: 48px;
+    color: #000;
+    font-size: 42px;
     font-family: Pathway Extreme, sans-serif;
-    font-weight: 500;
+    font-weight: 600;    
     margin-top: 32px;
-    margin-bottom: -24px;
+    margin-bottom: -24px;    
 }
 
 .section-enam .ket {
-    color: #FFF;
+    color: #2D2926;
     font-size: 16px;
     font-family: Pathway Extreme, sans-serif;
     font-weight: 300;
@@ -625,7 +647,7 @@ swiper-slide img {
     margin-top: 72px;  
     position: relative;
     overflow: hidden;
-    
+    background-color: #FCCC00;        
 }
 
 .section-enam button a {
@@ -635,24 +657,25 @@ swiper-slide img {
     font-weight: 500;
     text-decoration: none;
     position: relative;
-    z-index: 1;
+    z-index: 1;    
+    
 }
 
 .section-enam button::before {
     content: "";
     position: absolute;
     top: 0;
-    left: -100%;
-    
+    left: -100%;    
     width: 100%;
     height: 100%;
-    background-color: #FCCC00;
+    background-color: #000;
     transition: left 0.3s ease;
     z-index: 0;    
+    color: #FFF;
 }
 
 .section-enam button:hover::before {    
-    left: 0;
+    left: 0;    
 }
 
 
@@ -660,10 +683,12 @@ swiper-slide img {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 165px 0px 0px 0px;    
 }
 
 .img-enam img {
     width: 100%;
+    margin-right: 190px;
 }
 /* Section Enam End */
 
@@ -742,6 +767,10 @@ swiper-slide img {
 }
 
 .section-enam-mobile .row {
+    display: none;
+}
+
+hr {
     display: none;
 }
 
@@ -842,47 +871,53 @@ swiper-slide img {
         display: none;
     }
 
-    .our-service-two li  {
+    .our-service-two li, .our-service-three li {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: -50px;
+        text-align: center;
+        list-style-type: none;
+        margin-left: -40px;
     }
 
-    .our-service-two li img {
+    .our-service-two li img, .our-service-three li img {
         width: 186px;
     }
 
-    .our-service-two .title {
+    .our-service-two .title, .our-service-three .title {
         text-align: center;        
-        font-size: 20px;
+        font-size: 20px;        
     }
 
-    .our-service-two .sub-title {
+    .our-service-two .sub-title, .our-service-three .sub-title {
         text-align: center;
         font-size: 14px;
     }
 
-    .our-service-three li  {
+    .section-tiga .side-left {
+        display: none;
+    }
+
+    /* .our-service-three li  {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-left: -50px;
-    }  
+    }   */
 
-    .our-service-three li img {
+    /* .our-service-three li img {
         width: 186px;
-    }  
+    }   */
 
-    .our-service-three .title {
+    /* .our-service-three .title {
         text-align: center;        
         font-size: 20px;
-    }
+    } */
 
-    .our-service-three .sub-title {
+    /* .our-service-three .sub-title {
         text-align: center;
         font-size: 14px;
-    }        
+    }         */
     /* Section Three End */
 
     /* Section Four */
@@ -896,23 +931,18 @@ swiper-slide img {
         text-align: center;
     }
 
-    .section-empat .card .title {
-        font-size: 20px;
-    }
-    
-
-    .section-empat .card .sub-title {
-        font-size: 20px;        
+    .section-empat .card .card-body .title {
+        font-size: 24px;
     }
 
-    .section-empat .title-has {
-        font-size: 20px;
-        margin-top: 92px;        
-    }        
+    .section-empat .card .card-body .sub-title {
+        font-size: 16px;
+    }
     
-    .logos .logos-slide img {
-        width: 110px;
-    }    
+    hr {
+        display: block;
+    }
+
     /* Section Four End */
 
     /* Section Five */
@@ -940,6 +970,16 @@ swiper-slide img {
         margin-left: -270px;
     }        
     /* Section Five End */
+
+    /* Section Gallery */
+    .gallery .title {
+        font-size: 20px;
+    }
+
+    .gallery .sub-title {
+        font-size: 32px;
+    }
+    /* Section Gallery End */
 
     /* Section Six */
     .section-enam {
