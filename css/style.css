@@ -523,7 +523,8 @@ swiper-slide img {
 .owl-carousel .card .img-testimoni {    
     width: 72px;
     margin-top: 30px;
-    margin-left: 20px;        
+    margin-left: 20px;   
+    position: relative;     
 }
 
 .owl-carousel .card .bg-testimoni {
@@ -773,7 +774,6 @@ swiper-slide img {
 hr {
     display: none;
 }
-
 /* Responsive Mobile */
 
 @media (max-width: 767px) {
@@ -949,26 +949,54 @@ hr {
 
     .section-lima {
         background-color: #161F3F;
-        height:1180px;
+        height:865px;
         margin-bottom: 106px;
     }
 
-    .section-lima .title {
+    .section-lima .container .title {
         text-align: center;
+        font-size: 20px;
+        color: #848AA5;
+        margin: 92px 0px 0px 0px;
+    }
+
+    .section-lima .container .sub-title {
+        text-align: center;
+        font-size: 32px;
+        color: #FFF;
+        margin: 32px 0px 0px 0px;
+    }
+
+    .section-lima .card .container .img-testimoni {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    .pic-testimo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        margin-left: 135px;
+        margin: -20px 0px 0px 135px;
+    }
+
+    .section-lima .card .name {
+        margin: -185px 0px 0px 0px;
         font-size: 20px;
     }
 
-    .section-lima .sub-title {
-        text-align: center;
-        font-size: 32px;
+    .section-lima .card .btn {
+        margin: -142px 0px 0px 0px;
     }
 
-    .section-lima .bg-section-lima img{
-        width: 520px;
-        margin-top: 210px;        
-        position: absolute;
-        margin-left: -270px;
-    }        
+    .section-lima .card .desk {
+        line-height: 28px;
+    }
+    
     /* Section Five End */
 
     /* Section Gallery */
