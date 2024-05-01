@@ -580,6 +580,10 @@ swiper-slide img {
 /* Section Lima End */
 
 /* Section Gallery */
+.gallery {
+    margin: 48px 0px 48px 0px;
+}
+
 .gallery .title {
     color: #848AA5;
     font-size: 24px;
@@ -594,11 +598,39 @@ swiper-slide img {
     font-weight: 700;
 }
 
+.gallery .img-1 {
+    float: right;
+}
+
+.gallery .img-4 {
+    margin-top: 20px;
+}
+
 /* Section Gallery End */
 
-/* Section Enam */
+/* Section Blog News */
 
+.news-blog {
 
+}
+
+.news-blog .title {
+    color: #848AA5;
+    font-size: 24px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 300;
+}
+
+.news-blog .sub-title {
+    color: #161F3F;
+    font-size: 48px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 700;
+}
+
+/* Section Blog News End */
+
+/* Section Seven */
 .section-enam {
     background-image: url("/assets/image/bg-section6.svg");
     background-size: contain;
@@ -691,7 +723,7 @@ swiper-slide img {
     width: 100%;
     margin-right: 190px;
 }
-/* Section Enam End */
+/* Section Seven End */
 
 /* Section Footer */
 #footer {
@@ -995,7 +1027,8 @@ hr {
     
     /* Section Five End */
 
-    /* Section Gallery */
+    /* Section Gallery */    
+
     .gallery .title {
         font-size: 20px;
     }
@@ -1003,7 +1036,46 @@ hr {
     .gallery .sub-title {
         font-size: 32px;
     }
+
+    .gallery .img-1 {
+        width: 324px;
+        height: 671px;
+        float: none;
+        margin-top: -92px;
+    }
+
+    .gallery .img-2 {
+        width: 155px;
+        height: 160px;
+        float: right;                
+    }
+
+    .gallery .img-3 {
+        width: 155px;
+        height: 160px;
+        float: left;
+    }
+
+    .gallery .img-3, .gallery .img-2 {
+        margin-top: -165px;
+    }
+
+    .gallery .img-4 {
+        width: 324px;
+        height: 160px;
+        margin-top: -12px;                
+    }
     /* Section Gallery End */
+
+    /* Section News & Blog */
+    .news-blog .title {
+        font-size: 20px;        
+    }
+
+    .news-blog .sub-title {
+        font-size: 32px;
+    }
+    /* Section News & Blog End */
 
     /* Section Six */
     .section-enam {
