@@ -35,7 +35,7 @@
                         <li class="list-menu"><a href="">PRODUCT</a></li>
                         <li class="list-menu"><a href="">TESTIMONI</a></li>
                         <li class="list-menu"><a href="">GALERY</a></li>
-                        <li class="list-menu"><a href="">NEWS</a></li>
+                        <li class="list-menu"><a href="/news/news.html">NEWS</a></li>
                         
                     </ul>
                 </div>
@@ -528,6 +528,43 @@
                     <div class="col-md-12">
                         <swiper-container class="swiper-container mySwiper" init="false">                            
                             <swiper-slide><div class="row">
+                                <!-- <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="assets/image/img-prosesor.svg" alt="">
+                                        <div>
+                                            <p class="title">Prosesor Dan Kinerja</p>
+                                            <p class="deskripsi">Produsen ponsel cerdas terus berlomba untuk meningkatkan kinerja dengan memperkenalkan prosesor yang lebih kuat.</p>
+                                            <div>
+                                                <a href="#"><button>Read More</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="assets/image/img-ramcapasity.svg" alt="">
+                                        <div>
+                                            <p class="title">Prosesor Dan Kinerja</p>
+                                            <p class="deskripsi">Produsen ponsel cerdas terus berlomba untuk meningkatkan kinerja dengan memperkenalkan prosesor yang lebih kuat.</p>
+                                            <div>
+                                                <a href="#"><button>Read More</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="assets/image/img-bootcamp.svg" alt="">
+                                        <div>
+                                            <p class="title">Prosesor Dan Kinerja</p>
+                                            <p class="deskripsi">Produsen ponsel cerdas terus berlomba untuk meningkatkan kinerja dengan memperkenalkan prosesor yang lebih kuat.</p>
+                                            <div>
+                                                <a href="#"><button>Read More</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+
                                 <div class="col-md-4">
                                     <div class="card mb-0 mb-5">
                                         <img src="assets/image/img-prosesor.svg" alt="" class="card-img-top">
@@ -767,18 +804,21 @@
                 font-family: Pathway Extreme, sans-serif;
                 width: 90px;
                 background: transparent;  
-                height: 750px                                  
+                height: 730px;                
+                border: none 1px;                                 
             }
 
             .swiper-pagination-bullet-active {
-                text-decoration: underline;                
+                text-decoration: underline;
+                border: none;
+
             }
             `],                     
             pagination: {
             // el: '.swiper-pagination',
             clickable: true,
             renderBullet: function (index, className) {                
-                const texts = ['News', 'Blog'];
+                const texts = ['NEWS', 'BLOG'];
                 return '<span class="' + className + '">' + texts[index] + '</span>';
             },
         },
