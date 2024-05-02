@@ -626,8 +626,55 @@ swiper-slide img {
     font-size: 48px;
     font-family: Pathway Extreme, sans-serif;
     font-weight: 700;
+    margin: 0px 0px 40px 0px;
 }
 
+.news-blog .swiper-container .card {
+    border: none;
+    width: 324px;
+    height: 609px; 
+    margin-top: 100px;           
+}
+
+
+.news-blog .swiper-container .card .title {
+    color: #10172F;
+    font-size: 24px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 600;
+    text-align: left;
+}
+
+.news-blog .swiper-container .card .deskripsi{
+    color: #0F172A;
+    font-size: 16px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 200;
+    text-align: left;
+    margin-top: -10px;    
+}
+
+.news-blog .swiper-container .card img {
+    width: 324px;
+    height: 351px;
+}
+
+.news-blog .swiper-container .card a button {
+    background: transparent;
+    border: 2px solid #374E9D;
+    border-radius: 120px;
+    width: 167px;
+    height: 48px;
+    font-size: 16px;
+    font-family: Pathway Extreme, sans-serif;
+    color: #374E9D;
+}
+
+.news-blog .swiper-container .card a button:hover {
+    background-color: #000;
+    color: #FFF;
+    border: none;
+}
 /* Section Blog News End */
 
 /* Section Seven */
