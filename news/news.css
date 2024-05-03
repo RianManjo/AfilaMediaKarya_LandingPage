@@ -114,11 +114,16 @@ input {
 } */
 
 /* Section News */
+.news .frame .card {
+    border: none;        
+}
+
 .news .title {
     color: #0F172A;
     font-size: 56px;
     font-family: Pathway Extreme, sans-serif;
     font-weight: 600;
+    margin: 72px 0px 0px 0px;
 }
 
 .news .deskripsi {
@@ -134,19 +139,85 @@ input {
     font-weight: 500;
 }
 
-.news .artikel {
+.news .share {
+    color: #151A30;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Pathway Extreme, sans-serif;
+}
+
+.news .share span img {
+    margin: 5px;
+}
+
+.side-left-section-news {
+    position: absolute;
+    float: left;
+    left: 0;
+    margin: -570px 0px 0px 0px;
+}
+
+.side-right-section-news {
+    position: absolute;
+    float: right;
+    right: 0;
+    margin: -270px 0px 0px 0px;
+}
+/* Section News End */
+
+/* Section Artikel  */
+
+.list-artikel {
+    margin: 48px 0px 48px 0px ;
+}
+
+.artikel {
     color: #0F172A;
     font-size: 48px;
     font-family: Pathway Extreme, sans-serif;
     font-weight: 600;
 }
 
-.news .card {
-    width: 380.33px;
+.list-artikel .card {
+    width: 429.33px;
     height: 609px;
-    margin: 20px;
+    gap: 32px;
+    border: none;
 }
-/* Section News End */
+
+.list-artikel .card .title {
+    color: #10172F;
+    font-size: 24px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 600;
+}
+
+.list-artikel .card .deskripsi {
+    color: #0F172A;
+    font-size: 16px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 200;
+}
+
+.list-artikel .card button {
+    width: 167px;
+    height: 48px;
+    background-color: transparent;
+    border: 1.2px solid #374E9D;
+    border-radius: 120px;
+    font-size: 16px;
+    color: #374E9D;
+    margin: 12px 0px 0px 0px;  
+    font-family: Pathway Extreme, sans-serif;  
+    transition: transform 2s ease-in-out;
+}
+
+.list-artikel .card button:hover {
+    background-color: #000;
+    color: #FFF;
+    transition: 0.3s ease-in-out;
+}
+/* Section Artikel End */
 
 /* Section Seven */
 .section-enam {
@@ -397,6 +468,45 @@ input {
     }    
     /* Navigation Bar Selesai */
 
+    /* Section Artikel */
+    .list-artikel .artikel {
+        font-size: 32px;
+    }
+    /* Section Artikel End */
+    
+    /* Section Seven */
+    .news .title {        
+        font-size: 24px;        
+        margin: 50px 0px 0px 0px;
+    }
+    
+    .news .deskripsi {
+        text-align: start;        
+        font-size: 12px;        
+    }
+    
+    .news .sub-title {        
+        font-size: 18px; 
+        text-align: start;       
+    }
+    
+    .news .share {        
+        font-size: 16px;  
+        text-align: start;      
+    }
+    
+    .news .share span img {
+        margin: 5px;
+    }
+    
+    .side-left-section-news {
+        display: none;
+    }
+    
+    .side-right-section-news {
+        display: none;
+    }
+    /* Section Seven End */
     .section-enam {
         display: none;
     }
@@ -478,4 +588,26 @@ input {
         left: 0;
     }    
     /* Section Six End */
+
+    /* Footer */
+    .copyright {
+        display: none;
+    }
+
+    .img-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer ,.row {
+        text-align: center;
+        justify-content: center;
+        align-items: center;        
+    }
+
+    .menus-footer .title {        
+        padding-top: 60px;        
+    } 
+    /* Footer End */
 }
