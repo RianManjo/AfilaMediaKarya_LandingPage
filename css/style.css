@@ -15,6 +15,9 @@
     border-radius: 50px;
     width: 161px;
     height: 48px;
+    font-family: Pathway Extreme, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .navbar {
@@ -611,9 +614,6 @@ swiper-slide img {
 
 /* Section Blog News */
 
-.news-blog {
-
-}
 
 .news-blog .title {
     color: #848AA5;
@@ -634,7 +634,7 @@ swiper-slide img {
     border: none;
     width: 324px;
     height: 609px; 
-    margin-top: 100px;           
+    margin-top: 100px;          
 }
 
 .news-blog .swiper-container .card img {
@@ -665,6 +665,7 @@ swiper-slide img {
     font-family: Pathway Extreme, sans-serif;
     font-weight: 600;
     text-align: left;
+    padding-left: -30px;
 }
 
 .news-blog .swiper-container .card .deskripsi{
@@ -674,6 +675,7 @@ swiper-slide img {
     font-weight: 200;
     text-align: left;
     margin-top: -10px;    
+    padding-left: -50px;
 }
 
 .news-blog .swiper-container .card img {
@@ -689,13 +691,23 @@ swiper-slide img {
     height: 48px;
     font-size: 16px;
     font-family: Pathway Extreme, sans-serif;
-    color: #374E9D;
+    color: #374E9D;    
 }
 
 .news-blog .swiper-container .card a button:hover {
     background-color: #000;
     color: #FFF;
     border: none;
+}
+
+.news-blog .btn-other-news button {
+    width: 230px;
+    height: 60px;
+    color: #FFF;
+    background-color: #374E9D;
+    border: none;
+    border-radius: 4px;
+    margin: 0px 0px 30px 0px;
 }
 /* Section Blog News End */
 
@@ -886,6 +898,100 @@ hr {
     .navbar-mobile {
         display: block;
     }    
+
+    .logo {
+        margin-left: 0px;
+    }
+
+    nav button {
+        margin-right: 0px;
+    }
+
+    nav {
+        position: absolute;
+        top: 100px;
+        background: white;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        height: 0;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    nav a {
+        padding-top: 0px;
+        padding-right: 0px;
+        text-decoration: none;
+        color: #374E9D;
+        font-size: 15px;
+        font-weight: 500;
+        font-family: Pathway Extreme, sans-serif;
+        transition: 0.3s;    
+    }
+
+    nav a:nth-child(1) {
+        margin-top: 50px;
+    }
+
+    label {
+        width: 45px;
+        height: 30px;
+        position: relative;
+    }
+    label div {
+        width: 100%;
+        height: 5px;
+        background: #312ECB;
+        position: absolute;
+        transform: translateY(-50%);
+        border-radius: 99px;
+        transition: 0.3s;
+        transform: scale(1);
+    }
+    label div:nth-child(1) {
+        top: 0;
+    }
+    label div:nth-child(2) {
+        top: 30%;
+    }
+    label div:nth-child(3) {
+        top: 60%;
+    }
+
+    input:checked + header nav {
+        height: 100vh;
+    }
+    input:checked + header label div:nth-child(1) {
+        transform: rotate(45deg);
+        top: 30%;
+    }
+    input:checked + header label div:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 30%;
+    }
+    input:checked + header label div:nth-child(2) {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    .bg-navbar {
+        background-color: #FCCC00;
+        width: 48px;
+        height: 48px;
+        border-radius: 50px;
+    }
+
+    .bg-menu {
+        margin: 15px 0px 0px 10px;
+    }
+
+    .bg-menu div{
+        height: 1px;
+        width: 30px;
+        top: 0px;
+    }        
     /* Navigation Bar Selesai */
 
     /* Section One */
@@ -1229,8 +1335,8 @@ hr {
     }    
     /* Section Six End */
 
-    /* Footer */
-    .copyright {
+     /* Footer */
+     .copyright {
         display: none;
     }
 
@@ -1248,7 +1354,15 @@ hr {
 
     .menus-footer .title {        
         padding-top: 60px;        
-    }    
+    } 
+
+    .menus-footer .footer-up {
+        margin-top: -25px;
+    }
+
+    #footer #footer-up {
+        margin-top: -50px;
+    }
     /* Footer End */
 }
 

@@ -381,7 +381,15 @@ input {
 /* Navigation Bar End */
 
 @media (max-width: 767px) {
-    /* Navigation Bar */
+     /* Navigation Bar */
+     .navbar-desktop {
+        display: none;
+    }
+
+    .navbar-mobile {
+        display: block;
+    }    
+
     .logo {
         margin-left: 0px;
     }
@@ -437,10 +445,10 @@ input {
         top: 0;
     }
     label div:nth-child(2) {
-        top: 50%;
+        top: 30%;
     }
     label div:nth-child(3) {
-        top: 100%;
+        top: 60%;
     }
 
     input:checked + header nav {
@@ -448,24 +456,33 @@ input {
     }
     input:checked + header label div:nth-child(1) {
         transform: rotate(45deg);
-        top: 50%;
+        top: 30%;
     }
     input:checked + header label div:nth-child(3) {
         transform: rotate(-45deg);
-        top: 50%;
+        top: 30%;
     }
     input:checked + header label div:nth-child(2) {
         transform: scale(0);
         opacity: 0;
     }
 
-    .navbar-desktop {
-        display: none;
+    .bg-navbar {
+        background-color: #FCCC00;
+        width: 48px;
+        height: 48px;
+        border-radius: 50px;
     }
 
-    .navbar-mobile {
-        display: block;
-    }    
+    .bg-menu {
+        margin: 15px 0px 0px 10px;
+    }
+
+    .bg-menu div{
+        height: 1px;
+        width: 30px;
+        top: 0px;
+    }        
     /* Navigation Bar Selesai */
 
     /* Section Artikel */
@@ -609,5 +626,13 @@ input {
     .menus-footer .title {        
         padding-top: 60px;        
     } 
+
+    .menus-footer .footer-up {
+        margin-top: -25px;
+    }
+
+    #footer #footer-up {
+        margin-top: -50px;
+    }
     /* Footer End */
 }

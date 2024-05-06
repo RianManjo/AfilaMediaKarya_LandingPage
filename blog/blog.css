@@ -114,6 +114,79 @@ input {
     border: none;    
 }
 
+/* Section Blog */
+.pagination .page-item {
+    width: 50px;        
+}
+
+#pagination-prev {
+    margin-right: 65px;  
+    margin-top: 5px;  
+}
+
+#pagination-next {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.pagination .page-item .page-link {
+    border: none;
+    width: 42px;
+    height: 40px;
+    border-radius: 8px;
+    text-align: center;
+    font-family: Pathway Extreme, sans-serif;       
+}
+
+.card-blog .card {
+    border: none;            
+}
+
+.card-blog .card .title {
+    color: #10172F;
+    font-size: 24px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 500;
+}
+
+.card-blog .card .deskripsi {
+    color: #0F172A;
+    font-size: 16px;
+    font-family: Pathway Extreme, sans-serif;
+    font-weight: 200;
+}
+
+.card-blog .card a button {
+    border: 1px solid #374E9D;
+    width: 167px;
+    height: 48px;
+    color: #374E9D;
+}
+
+.sideleft-section1 {
+    float: left;
+    position: absolute;
+    margin-top: -2000px;
+}
+
+.sideright-section1 {
+    float: right;
+    right: 0;
+    position: absolute;
+    margin-top: -1500px;
+}
+
+.share {        
+    font-size: 20px;  
+    text-align: start;  
+    font-family: Pathway Extreme, sans-serif;    
+}
+
+.share span img {
+    margin: 5px;
+}
+/* Section Blog End */
+
 /* Section Seven */
 .section-enam {
     background-image: url("/assets/image/bg-section6.svg");
@@ -340,10 +413,10 @@ input {
         top: 0;
     }
     label div:nth-child(2) {
-        top: 50%;
+        top: 30%;
     }
     label div:nth-child(3) {
-        top: 100%;
+        top: 60%;
     }
 
     input:checked + header nav {
@@ -351,17 +424,38 @@ input {
     }
     input:checked + header label div:nth-child(1) {
         transform: rotate(45deg);
-        top: 50%;
+        top: 30%;
     }
     input:checked + header label div:nth-child(3) {
         transform: rotate(-45deg);
-        top: 50%;
+        top: 30%;
     }
     input:checked + header label div:nth-child(2) {
         transform: scale(0);
         opacity: 0;
     }
+
+    .bg-navbar {
+        background-color: #FCCC00;
+        width: 48px;
+        height: 48px;
+        border-radius: 50px;
+    }
+
+    .bg-menu {
+        margin: 15px 0px 0px 10px;
+    }
+
+    .bg-menu div{
+        height: 1px;
+        width: 30px;
+        top: 0px;
+    }
     /* Navigation Bar Selesai */
+
+    .sideright-section1, .sideleft-section1 {
+        display: none;
+    }
 
     /* Section Seven End */
     .section-enam {
@@ -466,5 +560,13 @@ input {
     .menus-footer .title {        
         padding-top: 60px;        
     } 
+
+    .menus-footer .footer-up {
+        margin-top: -25px;
+    }
+
+    #footer #footer-up {
+        margin-top: -50px;
+    }
     /* Footer End */
 }
