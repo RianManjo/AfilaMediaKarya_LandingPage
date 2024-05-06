@@ -528,87 +528,22 @@
                         <p class="sub-title">In Every Story Lies The Power To <br>Change And Inspire</p>
                     </div>
                 </div>
+                <div class="row row-cols-md-1 g-2 mt-5 my-4" id="cardList">
+                    <!-- Tempat Card Disini -->
+                </div>
                 <div class="row">
-                    <div class="col-md-12 d-flex justify-content-center">
-                        <swiper-container class="swiper-container mySwiper" init="false">                            
-                            <swiper-slide><div class="row">                               
-                                <div class="col-md-4">
-                                    <div class="card mb-0 mb-5">
-                                        <img src="assets/image/img-prosesor.svg" alt="" class="card-img-top">
-                                        <div class="card-body">
-                                            <p class="title">Prosesor Dan Kinerja</p>                                            
-                                            <p class="deskripsi" id="mrg">Produsen ponsel cerdas terus berlomba-lomba untuk meningkatkan kinerja dengan memperkenalkan prosesor yang lebih kuat</p>
-                                            <a href="/news/news.html"><button>Read More</button></a>
-                                        </div>
-                                    </div>
+                    <div class="col-12 d-flex justify-content-center">
+                        <nav aria-label="Page naviation example">
+                            <div class="row">
+                                <div class="col-12 d-flex justify-content-center">
+                                    <ul class="pagination">
+                                        <li class="page-item" id="pagination-prev"><a href="#!" onclick="changeage(event, 0)">Previous</a></li>
+                                        <li class="page-item active"><a class="page-link" href="#!" onclick="changePage(event, 1)">NEWS</a></li>
+                                        <li class="page-item"><a class="page-link" href="#!" onclick="changePage(event, 2)">BLOG</a></li>
+                                    </ul>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="card mb-0 mb-5">
-                                        <img src="assets/image/img-ramcapasity.svg" alt="" class="card-img-top">
-                                        <div class="card-body">
-                                            <p class="title">Kapasitas Penyimpanan Ram </p>      
-                                            <p class="deskripsi">Peningkatan kapasitas penyimpanan internal dan RAM adalah topik berita yang relevan bagi pengguna yang</p>                                      
-                                            <a href="/news/news.html"><button>Read More</button></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card mb-0 mb-5">
-                                        <img src="assets/image/img-bootcamp.svg" alt="" class="card-img-top">
-                                        <div class="card-body">
-                                            <p class="title">Bootcamp Karir</p>             
-                                            <p class="deskripsi" id="mrg">Bootcamp karir sering kali berfokus pada pemahaman industri tertentu dan persiapan karir berfokus pada pemahaman industri tertentu dan</p>                                                                           
-                                            <a href="/news/news.html"><button>Read More</button></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- <div class="row">
-                                    <div class="col-12">
-                                        <div class="btn-other-news">
-                                            <a href="/news/news.html"><button>Other Latest News</button></a>
-                                        </div>
-                                    </div>
-                                </div> -->
-                            </div></swiper-slide>                                                      
-                            <swiper-slide><div class="row">
-                                <div class="col-md-4">
-                                    <div class="card mb-0 mb-5">
-                                        <img src="assets/image/img-prosesor.svg" alt="" class="card-img-top">
-                                        <div class="card-body">
-                                            <p class="title">Prosesor Dan Kinerja</p>                                            
-                                            <p class="deskripsi" id="mrg">Produsen ponsel cerdas terus berlomba-lomba untuk meningkatkan kinerja dengan memperkenalkan prosesor yang lebih kuat</p>
-                                            <a href="/blog/blog.html"><button>Read More</button></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card mb-0 mb-5">
-                                        <img src="assets/image/img-ramcapasity.svg" alt="" class="card-img-top">
-                                        <div class="card-body">
-                                            <p class="title">Kapasitas Penyimpanan Ram </p>      
-                                            <p class="deskripsi">Peningkatan kapasitas penyimpanan internal dan RAM adalah topik berita yang relevan bagi pengguna yang</p>                                      
-                                            <a href="/blog/blog.html"><button>Read More</button></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card mb-0 mb-5">
-                                        <img src="assets/image/img-bootcamp.svg" alt="" class="card-img-top">
-                                        <div class="card-body">
-                                            <p class="title">Bootcamp Karir</p>             
-                                            <p class="deskripsi" id="mrg">Bootcamp karir sering kali berfokus pada pemahaman industri tertentu dan persiapan karir berfokus pada pemahaman industri tertentu dan</p>                                                                           
-                                            <a href="/blog/blog.html"><button>Read More</button></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div></swiper-slide>                                                      
-                        </swiper-container>                        
-                        <!-- <div class="swiper-container mySwiper">
-                            <div class="swiper-wrapper">
-                                <div class="swipper-slide">News content1</div>
-                                <div class="swipper-slide">blog content1</div>
                             </div>
-                        </div> -->                        
+                        </nav>
                     </div>
                 </div>
             </div>            
@@ -714,7 +649,7 @@
                 </div>
             </div>
         </div> -->
-    </footer>
+    </footer>    
     
     <!-- Section Footer End -->    
     <!-- Script Swiper -->
@@ -755,8 +690,8 @@
             },                                    
         });        
     });
-
     </script>
+
     <script>
         const swiperEl = document.querySelector('swiper-container')                
         const params = {
@@ -792,41 +727,135 @@
                 },
             },
         };
-        Object.assign(swiperEl, params)
-        
-        swiperEl.initialize();
-
-        const swiperNewsBlog = document.querySelector('.news-blog .mySwiper');
-
-        const paramNewsBlog = {
-            injectStyles: [`
-        .swiper-pagination-bullet {
-            font-size: 20px;
-            color: #374E9D;
-            font-weight: 500;
-            font-family: Pathway Extreme, sans-serif;
-            width: 90px;
-            background: transparent;                              
-            border: none;                                                                        
-        }
-
-        .swiper-pagination-bullet-active {
-            text-decoration: underline;
-            border: none;
-        }
-        `],                                                
-            pagination: {
-                // el: '.swiper-pagination',
-                clickable: true,
-                renderBullet: function (index, className) {                
-                    const texts = ['NEWS','BLOG'];
-                    return '<span class="' + className + '">' + texts[index] + '</span>';
-                },
-            },
-        };
-
-        Object.assign(swiperNewsBlog, paramNewsBlog);
-        swiperNewsBlog.initialize();                
+        Object.assign(swiperEl, params)        
+        swiperEl.initialize();                       
     </script>    
+    <script>
+        // Function untuk membuat kartu pada halaman tertentu
+        function createCards(page) {
+          // Ambil elemen tempat kartu akan ditampilkan
+        const cardList = document.getElementById('cardList');
+          // Kosongkan elemen tempat kartu sebelum menambahkan kartu baru
+        cardList.innerHTML = '';
+    
+          // Cek nomor halaman yang dipilih
+        if (page === 1) {
+            // Buat kartu pada halaman 1        
+        const card = document.createElement('div');
+        card.classList.add('col');               
+        card.innerHTML = ` 
+        <div class="card-blog">
+            <div class="row">
+                <div class="col-md-4 mb-0 mb-3">
+                    <div class="card ">        
+                        <img src="assets/image/img-prosesor.svg" alt="">
+                        <p class="title" style="color: #10172F; font-size: 24px; font-family: Pathway Extreme, sans-serif; font-weight: 500;">Prosesor Dan Kinerja</p>
+                        <p class="deskripsi" style="color: #10172F; font: 16px; font-family: Pathway Extreme, sans-serif; font-weight: 200;">Produsen ponsel cerdas terus berlomba-lomba untuk meningkatkan kinerja dengan memperkenalkan prosesor yang lebih kuat.
+                    </div>                                
+                    <div>
+                        <a href=""><button style="font-size: 16px; font-family: Pathway Extreme, sans-serif; border: 1px solid #374E9D; width: 167px; height: 48px; color: #374E9D; border-radius: 120px;">Read More</button></a>
+                    </div>
+                </div>  
+                <div class="col-md-4 mb-0 mb-3">
+                    <div class="card ">        
+                        <img src="assets/image/img-ramcapasity.svg" alt="">
+                        <p class="title" style="color: #10172F; font-size: 24px; font-family: Pathway Extreme, sans-serif; font-weight: 500;">Prosesor Dan Kinerja</p>
+                        <p class="deskripsi" style="color: #10172F; font: 16px; font-family: Pathway Extreme, sans-serif; font-weight: 200;">Produsen ponsel cerdas terus berlomba-lomba untuk meningkatkan kinerja dengan memperkenalkan prosesor yang lebih kuat.
+                    </div>                                
+                    <div>
+                        <a href=""><button style="font-size: 16px; font-family: Pathway Extreme, sans-serif; border: 1px solid #374E9D; width: 167px; height: 48px; color: #374E9D; border-radius: 120px;">Read More</button></a>
+                    </div>
+                </div> 
+                <div class="col-md-4 mb-0 mb-3">
+                    <div class="card ">        
+                        <img src="assets/image/img-bootcamp.svg" alt="">
+                        <p class="title" style="color: #10172F; font-size: 24px; font-family: Pathway Extreme, sans-serif; font-weight: 500;">Kapasitas Penyimpanan Ram</p>
+                        <p class="deskripsi" style="color: #10172F; font: 16px; font-family: Pathway Extreme, sans-serif; font-weight: 200;">Peningkatan kapasitas penyimpanan internal dan RAM adalah topik berita yang relevan bagi penggunan <br>yang</p>                            
+                    </div>            
+                    <div>
+                        <a href=""><button style="font-size: 16px; font-family: Pathway Extreme, sans-serif; border: 1px solid #374E9D; width: 167px; height: 48px; color: #374E9D; border-radius: 120px;">Read More</button></a>
+                    </div>
+                </div>                                                                
+                    </div>            
+                    <br>
+                    <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="btn-blog mt-3 mb-5">
+                        <a href="/news/news.html"><button style="width: 230px; height: 60px; border: none; border-radius: 4px; background-color: #374E9D; color: #FFF; font-size: 20px; font-family: Pathway-Extreme, sans-serif; font-weight: 500;">Other Latest News</button></a>
+                    </div> 
+                </div>
+            </div>        
+        </div>                                                                                              
+        `;
+        cardList.appendChild(card);
+
+        } else if (page === 2) {
+        // Buat kartu pada halaman 2        
+            const card = document.createElement('div');
+            card.classList.add('col');
+            card.innerHTML = `
+            <div class="card-blog">
+            <div class="row">                
+                <div class="col-md-4 mb-0 mb-3">
+                    <div class="card ">        
+                        <img src="assets/image/img-ramcapasity.svg" alt="">
+                        <p class="title" style="color: #10172F; font-size: 24px; font-family: Pathway Extreme, sans-serif; font-weight: 500;">Prosesor Dan Kinerja</p>
+                        <p class="deskripsi" style="color: #10172F; font: 16px; font-family: Pathway Extreme, sans-serif; font-weight: 200;">Produsen ponsel cerdas terus berlomba-lomba untuk meningkatkan kinerja dengan memperkenalkan prosesor yang lebih kuat.
+                    </div>                                
+                    <div>
+                        <a href=""><button style="font-size: 16px; font-family: Pathway Extreme, sans-serif; border: 1px solid #374E9D; width: 167px; height: 48px; color: #374E9D; border-radius: 120px;">Read More</button></a>
+                    </div>
+                </div> 
+                <div class="col-md-4 mb-0 mb-3">
+                    <div class="card ">        
+                        <img src="assets/image/img-bootcamp.svg" alt="">
+                        <p class="title" style="color: #10172F; font-size: 24px; font-family: Pathway Extreme, sans-serif; font-weight: 500;">Kapasitas Penyimpanan Ram</p>
+                        <p class="deskripsi" style="color: #10172F; font: 16px; font-family: Pathway Extreme, sans-serif; font-weight: 200;">Peningkatan kapasitas penyimpanan internal dan RAM adalah topik berita yang relevan bagi penggunan <br>yang</p>                            
+                    </div>            
+                    <div>
+                        <a href=""><button style="font-size: 16px; font-family: Pathway Extreme, sans-serif; border: 1px solid #374E9D; width: 167px; height: 48px; color: #374E9D; border-radius: 120px;">Read More</button></a>
+                    </div>
+                </div>                                                                
+                <div class="col-md-4 mb-0 mb-3">
+                <div class="card ">        
+                    <img src="assets/image/img-ramcapasity.svg" alt="">
+                    <p class="title" style="color: #10172F; font-size: 24px; font-family: Pathway Extreme, sans-serif; font-weight: 500;">Prosesor Dan Kinerja</p>
+                    <p class="deskripsi" style="color: #10172F; font: 16px; font-family: Pathway Extreme, sans-serif; font-weight: 200;">Produsen ponsel cerdas terus berlomba-lomba untuk meningkatkan kinerja dengan memperkenalkan prosesor yang lebih kuat.
+                </div>                                
+                <div>
+                    <a href=""><button style="font-size: 16px; font-family: Pathway Extreme, sans-serif; border: 1px solid #374E9D; width: 167px; height: 48px; color: #374E9D; border-radius: 120px;">Read More</button></a>
+                </div>
+                </div>  
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                        <div class="btn-blog mt-3 mb-5">
+                            <a href="/blog/blog.html"><button style="width: 230px; height: 60px; border: none; border-radius: 4px; background-color: #374E9D; color: #FFF; font-size: 20px; font-family: Pathway-Extreme, sans-serif; font-weight: 500;">Other Latest News</button></a>
+                        </div> 
+                    </div>
+                </div> 
+                </div>                            
+                <br>      
+            </div>        
+            `;
+            cardList.appendChild(card);        
+        };
+    
+        // Tandai halaman yang dipilih sebagai aktif
+        const pages = document.querySelectorAll('.pagination .page-item');
+        pages.forEach((pageItem) => {
+        pageItem.classList.remove('active');
+        });
+        pages[page].classList.add('active');
+    }
+    
+    // Function untuk menangani perpindahan halaman
+    function changePage(event, page) {
+        event.preventDefault();
+        createCards(page);
+    }
+    
+        // Panggil fungsi untuk membuat kartu pada halaman pertama saat halaman dimuat
+        createCards(1);
+    </script>
 </body>
 </html>
