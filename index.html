@@ -12,7 +12,10 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Link Font  -->
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="/css/pagination-element.min.css">
     <!-- Link Owl Animate -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -475,7 +478,10 @@
                     </div>                    
                 </div>
             </div>
-        </div>               
+        </div> 
+        <div class="bg-section-lima">
+            <img src="assets/image/bg-section5.svg" alt="">
+        </div>              
     </div>
     <!-- Section Five End -->
 
@@ -515,7 +521,9 @@
         </div>
     </section>
     <!-- Section Six End -->
-
+<div class="container">
+    <hr>
+</div>
     <!-- Section News & Blog -->
     <section id="News-Blog">
         <div class="container">
@@ -533,13 +541,14 @@
                 </div>
                 <div class="row">
                     <div class="col-12 d-flex justify-content-center">
-                        <nav aria-label="Page naviation example">
+                        <nav aria-label="Page navigation example">
                             <div class="row">
                                 <div class="col-12 d-flex justify-content-center">
                                     <ul class="pagination">
                                         <li class="page-item" id="pagination-prev"><a href="#!" onclick="changeage(event, 0)">Previous</a></li>
-                                        <li class="page-item active"><a class="page-link" href="#!" onclick="changePage(event, 1)">NEWS</a></li>
+                                        <li class="page-item"><a class="page-link" href="#!" onclick="changePage(event, 1)">NEWS</a></li>
                                         <li class="page-item"><a class="page-link" href="#!" onclick="changePage(event, 2)">BLOG</a></li>
+                                        <li class="page-item" id="pagination-prev"><a class="page-link" href="#!" onclick="changePage(event, 3)">Next</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -551,7 +560,9 @@
     </section>
 
     <!-- Section News & Blog End -->
-
+    <div class="container">
+        <hr>
+    </div>
     <!-- Section Seven -->
     <section>
         <div class="container">
@@ -608,15 +619,15 @@
                     <p class="title mt-2">Navigation</p>
                     <div class="row">
                         <div class="col-5">
-                            <p class="sub-title"><a href="#">Home</a></p>
-                            <p class="sub-title"><a href="#">About</a></p>
-                            <p class="sub-title"><a href="#">Service</a></p>
-                            <p class="sub-title"><a href="#">Product</a></p>                            
+                            <p class="sub-title" id="navigation"><a href="#">Home</a></p>
+                            <p class="sub-title" id="navigation"><a href="#">About</a></p>
+                            <p class="sub-title" id="navigation"><a href="#">Service</a></p>
+                            <p class="sub-title" id="navigation"><a href="#">Product</a></p>                            
                         </div>
                         <div class="footer-up col-7">
-                            <p class="sub-title"><a href="#">Testimoni</a></p>
-                            <p class="sub-title"><a href="#">News</a></p>
-                            <p class="sub-title"><a href="#">Gallery</a></p>
+                            <p class="sub-title" id="navigation"><a href="#">Testimoni</a></p>
+                            <p class="sub-title" id="navigation"><a href="#">News</a></p>
+                            <p class="sub-title" id="navigation"><a href="#">Gallery</a></p>
                             
                         </div>
                     </div>
@@ -641,16 +652,8 @@
                     <p class="sub-title"><a href="#">Afilabs.Co</a></p>                    
                 </div>                                                
             </div>
-        </div>
-        <!-- <div class="row">        
-            <div class="col-md-12 mt-5">
-                <div class="bg-footer">
-                    <img src="/assets/image/bg-footer.svg" alt="">
-                </div>
-            </div>
-        </div> -->
-    </footer>    
-    
+        </div>        
+    </footer>        
     <!-- Section Footer End -->    
     <!-- Script Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
@@ -729,18 +732,15 @@
         };
         Object.assign(swiperEl, params)        
         swiperEl.initialize();                       
-    </script>    
-    <script>
-        // Function untuk membuat kartu pada halaman tertentu
-        function createCards(page) {
-          // Ambil elemen tempat kartu akan ditampilkan
-        const cardList = document.getElementById('cardList');
-          // Kosongkan elemen tempat kartu sebelum menambahkan kartu baru
+    </script>  
+
+    <script>        
+        function createCards(page) {          
+        const cardList = document.getElementById('cardList');    
+            
         cardList.innerHTML = '';
-    
-          // Cek nomor halaman yang dipilih
-        if (page === 1) {
-            // Buat kartu pada halaman 1        
+
+        if (page === 1) {                  
         const card = document.createElement('div');
         card.classList.add('col');               
         card.innerHTML = ` 
@@ -789,8 +789,7 @@
         `;
         cardList.appendChild(card);
 
-        } else if (page === 2) {
-        // Buat kartu pada halaman 2        
+        } else if (page === 2) {           
             const card = document.createElement('div');
             card.classList.add('col');
             card.innerHTML = `
@@ -839,23 +838,21 @@
             `;
             cardList.appendChild(card);        
         };
-    
-        // Tandai halaman yang dipilih sebagai aktif
+
         const pages = document.querySelectorAll('.pagination .page-item');
         pages.forEach((pageItem) => {
         pageItem.classList.remove('active');
         });
         pages[page].classList.add('active');
     }
-    
-    // Function untuk menangani perpindahan halaman
+
     function changePage(event, page) {
         event.preventDefault();
         createCards(page);
     }
-    
-        // Panggil fungsi untuk membuat kartu pada halaman pertama saat halaman dimuat
+
         createCards(1);
     </script>
 </body>
 </html>
+

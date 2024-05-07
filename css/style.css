@@ -218,6 +218,10 @@ swiper-slide img {
     object-fit: cover;
 }
 
+/* .swiper-mobile {
+    display: none;
+}  */
+
 .sideleft-section1 {
     position: absolute;
     margin-top: -790px;
@@ -577,8 +581,7 @@ swiper-slide img {
 }
 
 .bg-section-lima {
-    position: absolute;
-    margin-top: -590px;
+    display: none;
 }
 
 /* Section Lima End */
@@ -709,7 +712,9 @@ swiper-slide img {
 }
 
 .pagination {
-    margin-top: -900px;
+    position: absolute;
+    margin-top: -870px;  
+    gap: 30px;  
 }
 
 #pagination-prev {
@@ -718,6 +723,26 @@ swiper-slide img {
 
 .card-blog .card{
     border: none;
+}
+
+.pagination .page-item.active .page-link {
+    border-bottom: 2px solid #374E9D; /* Ubah warna dan gaya garis sesuai kebutuhan */
+    background-color: none;
+}
+
+.page-item .page-link {
+    background: transparent;
+    color: #374E9D;
+    border: none;
+}
+
+.page-item.active .page-link {
+    border-bottom: 2px;
+    background: transparent;
+    background-color: white;
+    color: #374E9D;
+    border: none;
+    box-shadow: none;
 }
 
 /* Section Blog News End */
@@ -1210,6 +1235,18 @@ hr {
     .section-lima .card .desk {
         line-height: 28px;
     }
+
+    .bg-section-lima img {
+        height: 500px;
+        width: auto;
+    }
+
+    .bg-section-lima {
+        display: block;
+        position: absolute;
+        margin-top: -415px;
+        margin-left: -300px;
+    }
     
     /* Section Five End */
 
@@ -1373,6 +1410,15 @@ hr {
 
     #footer #footer-up {
         margin-top: -50px;
+    }
+
+    #footer .address .title br {
+        display: none;        
+    }  
+    
+    #navigation {
+        text-align: start;
+        padding-left: 30px;
     }
     /* Footer End */
 }

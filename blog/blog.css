@@ -138,6 +138,10 @@ input {
     font-family: Pathway Extreme, sans-serif;       
 }
 
+.page-item.active .page-link {
+    background-color: #374E9D;
+}
+
 .card-blog .card {
     border: none;            
 }
