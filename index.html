@@ -74,7 +74,7 @@
                 <a href="#Product">PRODUCT</a>
                 <a href="#Testimoni">TESTIMONI</a>
                 <a href="#Gallery">GALERY</a>
-                <a href="#News">NEWS</a>
+                <a href="#News-Blog">NEWS</a>
                 <button class="btn-contact">Contact Us <span><img src="assets/image/icon-whatsapp.svg" alt=""></span></button>
             </nav>                    
         </header>
@@ -696,7 +696,7 @@
     </script>
 
     <script>
-        const swiperEl = document.querySelector('swiper-container')                
+        const swiperEl = document.querySelector('.mySwiper'); // Pastikan menggunakan titik (.) untuk class selector                
         const params = {
             injectStyles: [`
             .swiper-pagination-bullet, .swiper-pagination-bullet-active {
@@ -712,15 +712,23 @@
             }
         
             .swiper-pagination-bullet-active {
-                text-decoration: underline;                 
+                text-decoration: underline;                               
             }
             
             @media (max-width: 768px) {
-                .swiper-pagination-bullet, .swiper-pagination-bullet-active {
-                    display: none;
+                .swiper-pagination-bullet {
+                    font-size: 0;
+                    width: 8px;                    
+                    padding: 1px;                                        
+                    background-color: #848AA5;
+                }
+                
+                .swiper-pagination-bullet-active {
+                    background-color: #DB9E07; /* Mengatur warna latar belakang untuk titik */
+                    width: 8px;                    
+                    padding: 2px;
                 }
             }
-
             `],
             pagination: {
                 clickable: true,
@@ -732,7 +740,8 @@
         };
         Object.assign(swiperEl, params)        
         swiperEl.initialize();                       
-    </script>  
+    </script>
+    
 
     <script>        
         function createCards(page) {          
