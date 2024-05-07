@@ -726,8 +726,8 @@ swiper-slide img {
 }
 
 .pagination .page-item.active .page-link {
-    border-bottom: 2px solid #374E9D; /* Ubah warna dan gaya garis sesuai kebutuhan */
-    background-color: none;
+    border-bottom: 2px solid #374E9D;
+    background-color: none;    
 }
 
 .page-item .page-link {
@@ -1093,7 +1093,16 @@ hr {
     .our-medsos {
         font-size: 20px;
         font-weight: 400;
-    }        
+    }
+    
+    .bg-section-2 {
+        margin-top: 70px;
+        position: absolute;
+    }
+
+    .bg-section-2 img {
+        width: 370px;
+    }
     /* Section Two End */
 
     /* Section Three */
