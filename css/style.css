@@ -440,9 +440,12 @@ swiper-slide img {
 
 .owl-carousel .card .img-testimoni {    
     width: 72px;
+    height: 72px;
+    object-fit: cover;
     margin-top: 30px;
     margin-left: 20px;   
-    position: relative;     
+    position: relative;  
+    border-radius: 100%;   
 }
 
 .owl-carousel .card .bg-testimoni {
@@ -517,10 +520,25 @@ swiper-slide img {
 
 .gallery .img-1 {
     float: right;
+    width: 566px;
+    height: 568px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.gallery .img-2, .img-3 {
+    width: 321px;
+    height: 266px;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 .gallery .img-4 {
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    width: 666px;
+    height: 275px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 /* Section Gallery End */
@@ -589,6 +607,24 @@ swiper-slide img {
     padding-left: -50px;
 }
 
+.card-blog .card-img-top {
+    /* width: 324px; */
+    height: 351px;
+    border-radius: 20px;
+    background-size: cover;
+    background-attachment: fixed;  
+    justify-content: center;
+    align-items: center;  
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-blog .card img {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
 .news-blog .swiper-container .card img {
     width: 324px;
     height: 351px;
@@ -623,7 +659,7 @@ swiper-slide img {
 
 .pagination {
     position: absolute;
-    margin-top: -870px;  
+    margin-top: -830px;  
     gap: 30px;  
 }
 
@@ -631,8 +667,14 @@ swiper-slide img {
     display: none;
 }
 
+.card-blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .card-blog .card{
-    border: none;
+    border: none;    
 }
 
 .pagination .page-item.active .page-link {
@@ -1132,6 +1174,10 @@ hr {
     .section-lima .card .container .img-testimoni {
         position: absolute;        
         width: auto;
+        border-radius: 100%;
+        width: 72px;
+        height: 72px;
+        object-fit: cover;
     }
 
     .pic-testimo {
@@ -1180,32 +1226,33 @@ hr {
     }
 
     .gallery .img-1 {
-        width: 324px;
-        height: 671px;
+        width: 323px;
+        height: 323px;
         float: none;
-        margin-top: -92px;
+        object-fit: cover;
     }
 
     .gallery .img-2 {
         width: 155px;
         height: 160px;
-        float: right;                
+        float: right;
+        object-fit: cover;               
     }
 
     .gallery .img-3 {
         width: 155px;
         height: 160px;
         float: left;
+        object-fit: cover;
     }
 
     .gallery .img-3, .gallery .img-2 {
-        margin-top: -165px;
+        /* margin-top: -165px; */
     }
 
     .gallery .img-4 {
         width: 324px;
-        height: 160px;
-        margin-top: -12px;                
+        height: 160px;    
     }
     /* Section Gallery End */
 

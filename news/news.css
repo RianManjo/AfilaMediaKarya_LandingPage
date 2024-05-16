@@ -4,9 +4,7 @@
 
     /* Navbar Desktop */
 .logo {
-    display: flex;
-    /* gap: 15px;
-    margin-left: 80px; */
+    display: flex;    
 }
 
 .btn-contact {
@@ -27,6 +25,7 @@
 .navbar.fixed-top {
     z-index: 1000;
 }
+
 .menu {
     display: flex;
     gap: 20px;
@@ -100,24 +99,18 @@ nav a:target {
     border-bottom: 2px solid #384E9D;
 }
 
-
 input {
     display: none;
 }
-@media (max-width: 768px) {
-
-    
-}
     /* Navbar Mobile End */
-
-/* Section Footer */
-/* #footer {
-    margin-top: 120px;
-} */
 
 /* Section News */
 .news .frame .card {
     border: none;        
+}
+
+iframe {
+    border-radius: 15px;
 }
 
 .news .title {
@@ -178,6 +171,13 @@ input {
     font-size: 48px;
     font-family: Pathway Extreme, sans-serif;
     font-weight: 600;
+}
+
+.list-artikel .card .card-img-top {    
+    height: 351px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
 }
 
 .list-artikel .card {
